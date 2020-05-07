@@ -2,7 +2,21 @@ package com.data.structure;
 
 import java.util.Stack;
 import java.util.regex.Pattern;
+/**
+ * 
+ * Iterate the given expression from left to right, one character at a time
 
+1.	If a character is operand, push it to stack.
+2.	If a character is an operator, 
+3.	pop operand from the stack, say it’s s1.
+4.	pop operand from the stack, say it’s s2.
+5.	perform (s2 operator s1) and push it to stack.
+6.	Once the expression iteration is completed, initialize the result string and pop out from the stack and add it to the result.
+7.	Return the result.
+ * 
+ * @author vishalpatil
+ *
+ */
 public class PostfixToInfixUsingStack {
 	static Stack operandStack = new Stack<>();
 
